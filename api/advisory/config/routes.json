@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/advisories",
+      "handler": "Advisory.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/advisories/count",
+      "handler": "Advisory.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/advisories/:id",
+      "handler": "Advisory.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/advisories",
+      "handler": "Advisory.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/advisories/:id",
+      "handler": "Advisory.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/advisories/:id",
+      "handler": "Advisory.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

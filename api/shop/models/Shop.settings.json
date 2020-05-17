@@ -1,0 +1,40 @@
+{
+  "connection": "default",
+  "collectionName": "Shop",
+  "info": {
+    "name": "shop",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "ShopName": {
+      "type": "string"
+    },
+    "ShopOwner": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "PhoneNumber": {
+      "type": "string"
+    },
+    "ImageUrl": {
+      "type": "string"
+    },
+    "user": {
+      "model": "user",
+      "via": "shop",
+      "plugin": "users-permissions"
+    },
+    "orders": {
+      "collection": "order",
+      "via": "shop"
+    }
+  }
+}

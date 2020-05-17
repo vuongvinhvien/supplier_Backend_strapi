@@ -1,0 +1,97 @@
+{
+  "connection": "default",
+  "collectionName": "orders",
+  "info": {
+    "name": "order",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "Customer": {
+      "type": "string",
+      "required": true,
+      "default": ""
+    },
+    "PhoneNumber": {
+      "type": "string"
+    },
+    "Facebook": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "From": {
+      "type": "string"
+    },
+    "Theme": {
+      "type": "string"
+    },
+    "Recipient": {
+      "type": "string"
+    },
+    "Note": {
+      "type": "text"
+    },
+    "Price": {
+      "type": "integer"
+    },
+    "TotalAmount": {
+      "type": "string"
+    },
+    "PaymentType": {
+      "type": "string"
+    },
+    "LinkProduct": {
+      "type": "string"
+    },
+    "OrderDate": {
+      "type": "date"
+    },
+    "DeliveryDatetime": {
+      "type": "date"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "Quantity": {
+      "type": "integer"
+    },
+    "ShippingFee": {
+      "type": "integer"
+    },
+    "advisory": {
+      "model": "advisory"
+    },
+    "PaymentStatus": {
+      "enum": [
+        "unpaid",
+        "paid"
+      ],
+      "enumDefault": "chưa thanh toán",
+      "type": "enumeration"
+    },
+    "ImageUrl1": {
+      "type": "string",
+      "default": "null"
+    },
+    "shop": {
+      "model": "shop",
+      "via": "orders"
+    },
+    "ImageUrl2": {
+      "type": "string",
+      "default": "null"
+    },
+    "orderstatus": {
+      "model": "orderstatus"
+    }
+  }
+}

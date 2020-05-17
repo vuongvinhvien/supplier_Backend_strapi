@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "orderstatus",
+  "info": {
+    "name": "orderstatus",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "type": {
+      "unique": true,
+      "default": "1",
+      "type": "string"
+    }
+  }
+}

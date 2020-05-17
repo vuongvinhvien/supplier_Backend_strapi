@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "Advisory",
+  "info": {
+    "name": "advisory",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "PhoneNumber": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    }
+  }
+}
